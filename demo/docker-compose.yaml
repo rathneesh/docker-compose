@@ -6,5 +6,16 @@ services:
 
     ports:
       - 5000:5000
+    networks:
+      - mynet
   redis:
     image: redis
+    networks:
+      - mynet
+    volumes:
+      - mydata:/data
+
+networks:
+  mynet:
+volumes:
+  mydata:    
