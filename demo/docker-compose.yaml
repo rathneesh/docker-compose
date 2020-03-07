@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web-app:
-    image: tmr/hit-counter 
+    image: rathneesh/hit-counter 
 
     ports:
       - 5000:5000
